@@ -1,0 +1,51 @@
+.shopping-cart {
+  display: flex;
+}
+#card-ukulele{
+    margin: auto;
+     height: 25rem;
+     width: 20rem;
+     border: 2px solid black;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: space-around; 
+        /* margin-top: 10px;  */
+    
+   }
+   .navbar {
+
+   }
+   .card-img {
+    width: 10rem;
+   }
+   .card-buttonAlign {
+     display: flex;
+     justify-content: space-between;
+     width: 200px;
+     align-items: center;
+     
+   }
+   .card-price {
+   width: 200px;
+   /* text-align: flex-end; */
+   font-size: x-large;
+     font-weight: bold;
+     
+   }
+   .shopping-cart {
+    height: 100vh;
+    /* margin-top: 300px; */
+    
+   }
+   #addToCart {
+     height: 35px;
+   }
+   #decrement, #increment {
+     width:30px;
+     height: 30px;
+   }
+
+
+   
