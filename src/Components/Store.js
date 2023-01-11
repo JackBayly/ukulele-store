@@ -3,22 +3,6 @@ import { useState } from "react";
 import SpecPage from './SpecPage';
 
 
-
-
-
-
-
-
-//make a component for the cards when clicked on
-//onclick of card display the full card with specs
-//for above mnaybe trigger a conditional rendering somehow
-//so the component goes in the code in the return statement in a conditional expression
-
-
-
-
-
-
 function Shop() {
   //below function was to learn how to change state on click
   const [show, setShow] = useState("false");
@@ -67,11 +51,7 @@ setImage(result[0].imageUrl);
 
     
   }
-  //have an array of objects that each contain the items name, price, and image url DONE
-  //change changeStuff function above to DONE
-  //go through the array and find the obeject that matches some sort of idetnifier DONE
-  //maybe the name or I could also fgive each a unique ID DONE
-  //once the functin finds the right elenment have it displayed DONE 
+ 
   return (
    show === "true" ? (<div className='shopping-cart'>
             
