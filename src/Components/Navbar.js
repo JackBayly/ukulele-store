@@ -2,6 +2,8 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBorderNone, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { useState, createContext, useContext } from "react";
+import { ShoppingContext } from '../App';
 
 function Navbar() {
     //if ul does not equal hover then disappear the dropdown
@@ -10,6 +12,8 @@ function Navbar() {
     //   if (!box.contains(event.target)) {
     //     box.style.display = 'none';
     //   }
+    const {total} = useContext(ShoppingContext);
+    const {items, setItems} = useContext(ShoppingContext);
     function drop() {
 
         if (document.querySelector(".hideItem").style.display === "block") {
@@ -23,7 +27,7 @@ function Navbar() {
       
     }
     };
-
+    // const number = useContext(NumberContext);
     return (
         <div className='navbar'>
              <Link to="/" style={{ textDecoration: 'none' }}>
@@ -53,7 +57,7 @@ function Navbar() {
             </select> */}
             <div classname="menuCartAlign">       
             <div className="cartIcon">
-            <FontAwesomeIcon icon={faShoppingCart} /> (<a>0</a>)
+            <FontAwesomeIcon icon={faShoppingCart} /> (<a>{total}</a>)
             </div>
      
                      <ul>

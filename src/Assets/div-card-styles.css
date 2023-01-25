@@ -3,7 +3,7 @@
 }
 #card-ukulele{
     margin: auto;
-     height: 25rem;
+     height: auto;
      width: 20rem;
      border: 2px solid black;
      border-radius: 5px;
@@ -51,6 +51,14 @@ width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+   }
+   #payButton {
+    min-height: 35px;
+    background-color: rgb(3, 170, 25);
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 5px;
+  margin-bottom: 20px;
    }
    #addToCart {
      height: 35px;
