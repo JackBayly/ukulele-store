@@ -1,7 +1,5 @@
 import '../App.css';
-import { useState, useContext} from "react";
-import { ReactDOM } from 'react';
-import SpecPage from './SpecPage';
+import { useContext} from "react";
 import { ShoppingContext } from '../App';
 
 
@@ -10,8 +8,6 @@ function Shop() {
 // const [items, setItems] = useContext(ShoppingContext);
 const {increment, decrement} = useContext(ShoppingContext);
 const {quantityTotal} = useContext(ShoppingContext);
-const {total} = useContext(ShoppingContext);
-const {currentItemTotal, setCurrentTotal} = useContext(ShoppingContext);
 const {show, setShow, name, setName, price, setPrice, image, setImage, number, setNumber, ukulele, setUkulele} = useContext(ShoppingContext);
 
   // const NumberContext = createContext();
@@ -27,22 +23,24 @@ setImage(result[0].imageUrl);
 setNumber(result[0].quantity)
     
   }
- const bla = (x) => {
-  // setItemNum(x)
+ const showAlertAndAddCartItem = () => {
+  quantityTotal();
+  alert('Items added to cart!');
  }
+
   return (
    show === "true" ? (<div className='shopping-cart'>
             
-   <div classname='zoom' id='card-ukulele'>
+   <div classname='zoom' className='card-ukulele' id='card-ukulele-specs'>
  
-   <button onClick={() => changeStuff()}>Go back</button>
+   <button onClick={() => changeStuff()} className="backCartBtn">Go back</button>
 
                    <h2>{name}</h2>
        <img src={image} alt='blue electric ukulele' class='zoom' className='card-img' />
-       <p className='price'>{price}</p>
+       <p className='price'>${price}</p>
        <div className='card-buttonAlign'>
-           <button onClick={()=>quantityTotal()}>Add to Cart</button>
-           <p><button onClick={()=> decrement(name)} id='decrement'>-</button><span id='quantity'>{number}</span><button onClick={()=>increment(name)} id='increment'>+</button></p>
+           <button onClick={()=>showAlertAndAddCartItem()} className="addCartBtn">Add to Cart</button>
+           <p><button onClick={()=> decrement(name)} id='decrement'>-</button><span id='quantity'> {number} </span><button onClick={()=>increment(name)} id='increment'>+</button></p>
        </div>
    </div>
 </div>

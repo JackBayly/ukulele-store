@@ -2,13 +2,13 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBorderNone, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { useState, createContext, useContext } from "react";
+import { useState, createContext, useContext, useEffect } from "react";
 import { ShoppingContext } from '../App';
 
 function Navbar() {
     //if ul does not equal hover then disappear the dropdown
     //   const box = document.getElementsByTagName('ul');
-
+const [change, setChange] = useState(false);
     //   if (!box.contains(event.target)) {
     //     box.style.display = 'none';
     //   }
@@ -19,53 +19,33 @@ function Navbar() {
         if (document.querySelector(".hideItem").style.display === "block") {
             document.querySelector(".hideItem").style.display = "none";
         } else { document.querySelector(".hideItem").style.display = "block";
-    setTimeout(bye, 3000);
+  
+   
+    };
+    
     };
     function bye(){
       
         document.querySelector(".hideItem").style.display="none";
       
     }
-    };
+    
     // const number = useContext(NumberContext);
     return (
         <div className='navbar'>
              <Link to="/" style={{ textDecoration: 'none' }}>
                 <h1>You Ukes</h1>
             </Link>
-                        {/* <select name="menu" id="menu">
-            <option value="menu">
-                <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-                    Menu
-                </Link>
-                </option>
-                <option value="home">
-                <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-                    Home
-                </Link>
-                </option>
-                <option value="shop">
-                <Link to="/shop" style={{ textDecoration: 'none', color: 'blue' }}>
-                    Shop
-                </Link>
-                </option>
-                <option value="cart">
-                <Link to="/cart" style={{ textDecoration: 'none', color: 'black' }}>
-                    Cart
-                </Link>
-                </option>
-            </select> */}
+                       
             <div classname="menuCartAlign">       
             <div className="cartIcon">
             <FontAwesomeIcon icon={faShoppingCart} /> (<a>{total}</a>)
             </div>
      
-                     <ul>
-                {/* <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-                    <li className="displayMenu" >Menu</li>
-                </Link> */}
+                     <ul onMouseLeave={bye}>
+                
 
-                    <Link to="/"  onClick={drop} class="displayMenu"style={{ textDecoration: 'none', color: 'black'}}>
+                    <Link to="/"   onClick={drop} class="displayMenu"style={{ textDecoration: 'none', color: 'black'}}>
                         <li>Home</li>
                     </Link>
                     

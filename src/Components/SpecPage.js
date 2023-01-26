@@ -1,5 +1,5 @@
 import React from "react"
-import '../Assets/div-card-styles.css';
+
 
 function SpecPage() {
     return (
