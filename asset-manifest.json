@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ukulele-store/static/css/main.91e61419.css",
+    "main.js": "/ukulele-store/static/js/main.7530b9e4.js",
+    "static/media/Hello.jpg": "/ukulele-store/static/media/Hello.161d617272dab2852fa4.jpg",
+    "index.html": "/ukulele-store/index.html",
+    "main.91e61419.css.map": "/ukulele-store/static/css/main.91e61419.css.map",
+    "main.7530b9e4.js.map": "/ukulele-store/static/js/main.7530b9e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91e61419.css",
+    "static/js/main.7530b9e4.js"
+  ]
+}
