@@ -1,4 +1,4 @@
-
+/* Mobile first design */
 .App {
   text-align: center;
 }
@@ -7,108 +7,99 @@
   height: 40vmin;
   pointer-events: none;
 }
+
 .home {
-/* background-color: yellow; */
-height:80vh;
-width: 100vw;
-
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #card-ukulele-specs {
   overflow: hidden;
 }
+
 .shopTitle {
-
- margin:auto;
- margin-top: 200px; 
-
-
- border-radius: 5px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 5px;
   grid-column-start: span 2;
   grid-row-start: 1;
-grid-row-end: 2;
+  grid-row-end: 2;
 }
+
 .shop {
   height: 100%;
   width: auto;
   display: grid;
   grid-template-columns: repeat(2, auto);
-grid-template-rows: 5rem 10rem 10rem;
-grid-gap: 80px 10px;
-
-justify-content: center;
-
+  grid-template-rows: 5rem 10rem 10rem;
+  grid-gap: 80px 10px;
+  justify-content: center;
 }
+
 .ukulele {
-  margin-top: 150px; 
+  margin-top: 150px;
   height: 14rem;
   width: 9rem;
-  /* border: 2px solid black; */
   border-radius: 5px;
 }
-.ukulele {
- /* overflow: hidden; */
 
-  border: 2px solid black; 
+.ukulele {
+  border: 2px solid black;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
+
 img {
- width: 7rem;
+  width: 7rem;
 }
-.namePriceAlign {
- 
-}
+
 .buttonAlign {
   display: flex;
   justify-content: space-between;
   width: 200px;
   align-items: center;
-  
 }
+
 .price {
-
-font-size: 1rem;
+  font-size: 1rem;
   font-weight: bold;
-
 }
 
 ul {
- 
   text-align: center;
   width: 10rem;
   height: 100px;
   padding: 20px;
-   list-style-type: none;
-   margin-right: -2rem;
+  list-style-type: none;
+  margin-right: -2rem;
 }
+
 .hideItem {
-  display:none;
-  
+  display: none;
 }
+
 li {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: aquamarine;
-  /* border-top: 2px solid rgb(38, 126, 97); */
- height: 25px;
+  height: 25px;
   padding: 9px;
   font-size: medium;
-  font-weight:500;
+  font-weight: 500;
 }
+
 li:hover {
-  background-color:  rgb(62, 192, 149);
+  background-color: rgb(62, 192, 149);
 }
+
 .cartIcon {
   margin-right: -50px;
   margin-bottom: -15px;
@@ -119,36 +110,37 @@ li:hover {
   border-top: 0px;
   cursor: pointer;
   border-top-left-radius: 10px;
- 
 }
+
 .displayMenu:hover {
- background-color: rgb(62, 192, 149);;
+  background-color: rgb(62, 192, 149);
 }
+
 .lastLi {
   border-bottom-left-radius: 10px;
 }
+
 h1 {
   color: black;
   margin-left: 3rem;
-  
 }
-/* .pageHeight {
-  height: 100vh;
-} */
+
 .helloImg {
   width: 20rem;
-  margin-top: 200px;  
+  margin-top: 200px;
 }
+
 .shopNowBtn {
   width: 10rem;
   height: 3rem;
   font-size: large;
   font-weight: bold;
-margin-top: 4rem;
-background-color: white;
-border: 2px solid black;
-border-radius: 5px;;
+  margin-top: 4rem;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
 }
+
 .navbar {
   position: fixed;
   display: flex;
@@ -156,12 +148,13 @@ border-radius: 5px;;
   align-items: flex-start;
   width: 100vw;
   background-color: aquamarine;
-  height:100px;
+  height: 100px;
 }
+
 .cartIcon {
   align-self: center;
-  
 }
+
 .footer {
   height: 100px;
   background-color: aquamarine;
@@ -171,8 +164,6 @@ border-radius: 5px;;
   width: auto;
   margin-top: 70px;
 }
-
-
 
 .App-header {
   background-color: #282c34;
@@ -189,122 +180,116 @@ border-radius: 5px;;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Below is other style sheet */
-
 .shopping-cart {
   display: flex;
 }
-.card-ukulele{
-    margin: auto;
-     height: 500px;
-     width: 20rem;
-     border: 2px solid black;
-     border-radius: 5px;
-    padding: 10px;
-   
-        /* margin-top: 10px;  */
-    overflow: scroll;
-    
-   }
-   
-   .navbar {
 
-   }
-   .card-img {
-    width: 10rem;
-   }
-   .card-buttonAlign {
-     display: flex;
-     justify-content: space-around;
-     width: 20rem;
-     align-items: center;
-     
-   }
-   .addCartBtn {
-    height: 30px;
-    background-color: rgb(3, 170, 25);
-    font-size: large;
-    border: 2px solid black;
-    border-radius: 5px
-   }
-   .backCartBtn { 
-    height: 30px;
-    
-    font-size: large;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 12rem;
-   }
-   .card-price {
-   width: 200px;
-   /* text-align: flex-end; */
-   font-size: x-large;
-     font-weight: bold;
-     
-   }
-   button {
-    border: 2px solid black;
-    border-radius: 5px;
-   }
-   .shopping-cart{
-    height: 100vh;
-    /* margin-top: 300px; */
-    
-   }
-   .shopping-cart-page {
-    display: flex;
-    height:100vh;
-width: 100vw;
-   }
-   .cart-title-style {
-    text-decoration:underline
-   }
-   .cart-item {
-  
-    height: 300px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-   }
-   #payButton {
-    min-height: 35px;
-    background-color: rgb(3, 170, 25);
-    font-size: large;
-    border: 2px solid black;
-    border-radius: 5px;
+.card-ukulele {
+  margin: auto;
+  height: 500px;
+  width: 20rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.card-img {
+  width: 10rem;
+}
+
+.card-buttonAlign {
+  display: flex;
+  justify-content: space-around;
+  width: 20rem;
+  align-items: center;
+}
+
+.addCartBtn {
+  height: 30px;
+  background-color: rgb(3, 170, 25);
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.backCartBtn {
+  height: 30px;
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 12rem;
+}
+
+.card-price {
+  width: 200px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.shopping-cart {
+  height: 100vh;
+}
+
+.shopping-cart-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cart-title-style {
+  text-decoration: underline;
+}
+
+.cart-item {
+  height: 300px;
   margin-bottom: 20px;
-   }
-   #addToCart {
-     height: 35px;
-   }
-   #decrement, #increment {
-     width:30px;
-     height: 30px;
-   }
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#payButton {
+  min-height: 35px;
+  background-color: rgb(3, 170, 25);
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#addToCart {
+  height: 35px;
+}
+
+#decrement,
+#increment {
+  width: 30px;
+  height: 30px;
+}
+
+/* Below for desktops */
+
 @media only screen and (min-width: 768px) {
   .footer {
-    margin-top: 94px; 
-  } 
-  .helloImg {
-    width: 35rem
+    margin-top: 94px;
   }
+
+  .helloImg {
+    width: 35rem;
+  }
+
   ul {
     width: 20rem;
     height: 500px;
-   
   }
+
   .shop {
     height: 100%;
     width: auto;
@@ -312,18 +297,21 @@ width: 100vw;
     grid-template-columns: repeat(3, 20rem);
     grid-template-rows: 10rem 10rem;
     grid-gap: 80px 10px;
-    
-}
-.shopTitle {
- 
-  border-radius: 5px;
-  grid-column-start: span 3;
-justify-content: center;
- 
-}
-.ukulele {
-  width: 19.5rem;
-  height: 14rem;
-  margin-top: 120px;
-}
+  }
+
+  .shopTitle {
+    border-radius: 5px;
+    grid-column-start: span 3;
+    justify-content: center;
+  }
+
+  .ukulele {
+    width: 19.5rem;
+    height: 14rem;
+    margin-top: 120px;
+  }
+
+  .card-ukulele {
+    width: 25rem;
+  }
 }
