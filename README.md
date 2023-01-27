@@ -12,8 +12,10 @@
   <li>Flexbox and Grid</li>
 </ul>
 <h2>Final Thoughts</h2>
-<p>This project was mainly a way to practice using React. I feel like I learned a lot, like how to manipulate state, pass data between components and navegate those components. I am a lot more confident in my React skills after doing this project. And I enjoyed getting to make a ukulele-based website (I'm an avid uke player :musical_note:). I also enjoyed the process of designing mobile-first. It looks great on mobile and it was relatively easy to make it look good on a desktop. And i love getting to *pun fully intended* <i>flex</i> my flexbox skills, and my grid skills. Both have been immensely helpful when making layouts and alligning elenments. I'd like to add on to it later maybe with a backend and user authentication. Overall, I learned a lot, it was a fun project, and I like how it turned out :smiley:  </p>
-<figure>
-<img src="https://www.bst-detectable.com/media/catalog/product/cache/3ad67510fce2bf71ce8610cd0fb11d45/d/e/desktop-calculator-1_2.jpg" width="30%" alt="">
-  <figcaption>Blue calculator with a coral clear button, which I loosely based the color scheme off of in my project</figcaption>
+<p>This project was mainly a way to practice using React. I feel like I learned a lot, like how to manipulate state, pass data between components and navegate those components. I am a lot more confident in my React skills after doing this project. And I enjoyed getting to make a ukulele-based website (I'm an avid uke player :musical_note:). I also enjoyed the process of designing mobile-first. It looks great on mobile and it was relatively easy to make it look good on a desktop. And i love getting to *pun fully intended* <i>flex</i> my flexbox skills, and my grid skills. Both have been immensely helpful when making layouts and alligning elenments. I'd like to add on to it later maybe with a backend and user authentication. Overall though, I learned a lot, it was a fun project, and I like how it turned out :smiley:  </p>
+<figure style="display:flex;">
+<img src="https://user-images.githubusercontent.com/27658766/215112071-0462b0c5-95fc-46ca-b98c-c88ede25a6c2.png" style="width: 15rem;"/>
+
+<img src="https://user-images.githubusercontent.com/27658766/215112517-4eafb630-4543-4715-875b-91661df61b1d.png" style="width: 15rem;"/>
+  <figcaption>Pictures of app on mobile.</figcaption>
   </figure>
