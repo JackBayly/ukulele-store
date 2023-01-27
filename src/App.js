@@ -120,6 +120,7 @@ const decrement = (name) => {
           <Navbar/>
           <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/ukulele-store" element={<Home/>} />
           <Route path="/shop" element={<Store/>} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
