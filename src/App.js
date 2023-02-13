@@ -58,8 +58,6 @@ function App() {
 
   const quantityTotal = () => {
     setTotal(ukulele.reduce((total, num) => { return total + num.quantity }, 0))
-    console.log(total)
-
   }
 
   const increment = (name) => {
@@ -70,8 +68,6 @@ function App() {
         uke.quantity = uke.quantity + 1;
         setCurrentTotal(uke.quantity)
         setNumber(uke.quantity)
-        console.log(uke.quantity)
-        console.log(uke.name)
       }
     });
   }
@@ -85,8 +81,6 @@ function App() {
           uke.quantity = uke.quantity - 1;
           setCurrentTotal(uke.quantity)
           setNumber(uke.quantity)
-          console.log(uke.quantity)
-          console.log(uke.name)
         }
       }
     });
